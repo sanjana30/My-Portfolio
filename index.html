@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sanjana Tripathi</title>
+    <link rel="shortcut icon" type="image/png" href="portfolio-icon.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
+        crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
+        crossorigin="anonymous"></script>
+    <!-- include moment.js -->
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+    <!-- firebase reference -->
+    <script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
+    <!-- Added Font -->
+    <link href="https://fonts.googleapis.com/css?family=Antic|Cabin+Sketch|Neucha" rel="stylesheet">
+    <!-- css link -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        .header {
+            background-image: url("background-blend.gif");
+            background-size: cover;
+            width: 100%;
+        }
+        
+        .card-footer-buttons {
+            text-align: center;
+            background: #85766E;
+        }
+
+        .project-image {
+            width: 100%;
+            height: auto;
+        }
+
+        body {
+            background: #FCE7D7;
+        }
+
+        .card-color {
+            background: #E0CCBD;
+        }
+        .header-button{
+            background: #85766E;
+            
+        }
+        footer{
+            background: #85766E;
+            position: static;
+            bottom: 0;
+            width: 100%;
+            height: 50px;
+            padding: 10px;
+            margin-top: 30px;
+            text-align: center;
+        }
+        .card{
+            box-shadow: 0 4px 8px 0 #85766E, 0 6px 20px 0 #85766E;
+            margin: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- this is my fluid-jumbotron header -->
+    <div class="jumbotron jumbotron-fluid header">
+        <div class="container ">
+            <h1 class="display-4">Sanjana Tripathi</h1>
+            <p class="lead">Observe, Learn & Reflect</p>
+            
+        </div>
+    </div>
+    <!-- close jumbotron header -->
+    <!-- enclosing rest of the body in a container -->
+    <div class="container">
+        <!-- add a card group -->
+        <div class="card-deck">
+            <div class="card">
+                <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
+                <div class="card-body card-color">
+                    <h5 class="card-title">It's Train Time</h5>
+                    <p class="card-text">
+                        <img class="project-image" src="traincartoon.png">
+                    </p>
+                </div>
+                <div class="card-footer card-footer-buttons">
+                    <div class="btn-group" role="group">
+                        <button type="button" class="btn btn-default">
+                            <small class="text-muted">
+                                <a href="https://sanjana30.github.io/TrainTime/">It's Train Time!</a>
+                            </small>
+                        </button>
+                        <button type="button" class="btn btn-default">
+                            <small class="text-muted">
+                                <a href="https://github.com/sanjana30/TrainTime">Github-Train Time</a>
+                            </small>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
+                <div class="card-body card-color">
+                    <h5 class="card-title">Giftastic Muggle</h5>
+                    <p class="card-text">
+                        <img class="project-image" src="harryvector2.png">
+                    </p>
+                </div>
+                <div class="card-footer card-footer-buttons">
+                    <div class="btn-group" role="group">
+                        <button type="button" class="btn btn-default">
+                            <small class="text-muted">
+                                <a href="https://sanjana30.github.io/gifTastic/">Giftastic Muggle!</a>
+                            </small>
+                        </button>
+                        <button type="button" class="btn btn-default">
+                            <small class="text-muted">
+                                <a href="https://github.com/sanjana30/gifTastic">Github-Giftastic</a>
+                            </small>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+            <div class="card">
+                <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
+                <div class="card-body card-color">
+                    <h5 class="card-title">Stick it up</h5>
+                    <p class="card-text">
+                        <img class="project-image" src="fridgevector.png">
+                    </p>
+                </div>
+                <div class="card-footer card-footer-buttons">
+                    <div class="btn-group" role="group">
+                        <button type="button" class="btn btn-default">
+                            <small class="text-muted">
+                                <a href="https://sanjana30.github.io/Fridge-sticker/">Stick it up!</a>
+                            </small>
+                        </button>
+                        <button type="button" class="btn btn-default">
+                            <small class="text-muted">
+                                <a href="https://github.com/sanjana30/TrainTime">Github-Fridge Sticker</a>
+                            </small>
+                        </button>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+        <!-- card group closed -->
+        <!-- ................................................................. -->
+        <!-- add a card group -->
+        <div class="card-deck">
+            <div class="card">
+                <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
+                <div class="card-body card-color">
+                    <h5 class="card-title">Rock-Paper-Scissors</h5>
+                    <p class="card-text">
+                        <img class="project-image" src="rps.png">
+                    </p>
+                </div>
+                <div class="card-footer card-footer-buttons">
+                    <div class="btn-group" role="group">
+                        <button type="button" class="btn btn-default">
+                            <small class="text-muted">
+                                <a href="https://sanjana30.github.io/Rock-Paper-Scissors-Lizard-Spock/">Rock-Paper-Scissors</a>
+                            </small>
+                        </button>
+                        <button type="button" class="btn btn-default">
+                            <small class="text-muted">
+                                <a href="https://github.com/sanjana30/Rock-Paper-Scissors-Lizard-Spock">Github-RPS</a>
+                            </small>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
+                <div class="card-body card-color">
+                    <h5 class="card-title">Classroom-Hangman</h5>
+                    <p class="card-text">
+                        <img class="project-image" src="hangman.png">
+                    </p>
+                </div>
+                <div class="card-footer card-footer-buttons">
+                    <div class="btn-group" role="group">
+                        <button type="button" class="btn btn-default">
+                            <small class="text-muted">
+                                <a href="https://sanjana30.github.io/Word-Guess-Game/">Classroom-Hangman</a>
+                            </small>
+                        </button>
+                        <button type="button" class="btn btn-default">
+                            <small class="text-muted">
+                                <a href="https://github.com/sanjana30/Word-Guess-Game">Github-Hangman</a>
+                            </small>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+            <div class="card">
+                <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
+                <div class="card-body card-color">
+                    <h5 class="card-title">Car-Pul</h5>
+                    <p class="card-text">
+                        <img class="project-image" src="carpool.png">
+                    </p>
+                </div>
+                <div class="card-footer card-footer-buttons">
+                    <div class="btn-group" role="group">
+                        <button type="button" class="btn btn-default">
+                            <small class="text-muted">
+                                <a href="https://svigil.github.io/Team8Project1/">Let's Car-Pul!</a>
+                            </small>
+                        </button>
+                        <button type="button" class="btn btn-default">
+                            <small class="text-muted">
+                                <a href="https://github.com/svigil/Team8Project1">Github-Car Pool</a>
+                            </small>
+                        </button>
+                    </div>
+
+                </div>
+                
+                
+            </div>
+
+        </div>
+        <!-- card group closed -->
+        
+    </div>
+    <!-- close container -->
+    <!-- here goes the footer -->
+    <footer>
+            <a href="https://github.com/sanjana30/" target="_" ><img src="github2.png" style="width: 30px; height: 30px"></a>
+            <a href="https://linkedin.com/in/sanjana-tripathi" target="_"><img src="linkedin.png" style="width: 30px; height: 30px"></a>
+            <a href="mailto:someone@example.com?Subject=Hello!"><img src="email.png" style="width: 30px; height: 30px"></a>
+        </footer>
+    <!-- close footer -->
+    <!-- modal -->
+    <div class="modal fade welcome-modal" id="welcomeModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header" id = "modal-change" style="background: black">
+                        <h5 class="modal-title" id="exampleModalLongTitle" style="color: white">Welcome!</h5>
+                        <button type="button" class="close" data-dismiss="modal" style="color: white" aria-label="Close">
+                            <span aria-hidden="true" >&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body" style="background:black">
+                        
+                        <p style="color: white">Work in progress. Enjoy!</p>
+    
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+    <!-- modal close -->
+    <script>
+         
+        $(document).ready(function() {
+            $("#welcomeModal").modal({
+            backdrop: "static"
+        });
+        });
+    </script>
+
+</body>
+
+</html>
